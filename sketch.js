@@ -1,11 +1,11 @@
 // Refactored
 
 let grid = [];
-// const gridRows = 40;
 const gridRows = 40;
 const gridCols = 40;
 // const gridSize = 20;
-const gridSize = 9;
+const gridSize = 18;
+
 
 const gridMargin = 10;
 const dead = 0;
@@ -18,7 +18,7 @@ let initializeFunction = function() { return floor(random(2)); }
 
 function setup() {
     // createCanvas(gridSize * gridRows + (2 * gridMargin), gridSize * gridCols + (2 * gridMargin));
-    createCanvas(375, 667);
+    createCanvas(375 * 2, 667 * 2);
     frameRate(15);
     grid = CalculatorInitialGeneration(grid, gridRows, gridCols, initializeFunction, doTesting);
 }
