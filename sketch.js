@@ -18,7 +18,7 @@ let initializeFunction = function() { return floor(random(2)); }
 
 function setup() {
     // createCanvas(gridSize * gridRows + (2 * gridMargin), gridSize * gridCols + (2 * gridMargin));
-    createCanvas(375 * 2, 667 * 2);
+    createCanvas(375 * 2, 667 * 2 * (3.125 / 4.125));
     frameRate(15);
     grid = CalculatorInitialGeneration(grid, gridRows, gridCols, initializeFunction, doTesting);
 }
