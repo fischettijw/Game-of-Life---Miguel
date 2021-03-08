@@ -7,7 +7,7 @@ const gridCols = 40;
 const gridSize = 18;
 
 
-const gridMargin = 10;
+const gridMargin = 14;
 const dead = 0;
 const live = 1;
 const colorDead = 'white';
